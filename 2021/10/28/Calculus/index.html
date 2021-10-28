@@ -15,7 +15,7 @@
 <meta property="og:description" content="微积分学习心得（同济+高教）高等数学微积分期中总结 [TOC]  极限与连续  数列&#x2F;函数极限极限这一章首先从数列极限入手，引出有关数列极限的标准定义ε-N定义，严格准确刻画了当$n$趋向无穷时刻的数列值的趋势$A$，并把A叫做该数列的极限。极限是一个准确的值，若取有限个点，得到的数列值的趋势不一致，或者$A$的值是不准确的，那么称数列极限不存在（发散）。如${1,-1,1,-1…}$，${n}$">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-28T11:13:00.000Z">
-<meta property="article:modified_time" content="2021-10-28T13:16:19.604Z">
+<meta property="article:modified_time" content="2021-10-28T15:59:45.310Z">
 <meta property="article:author" content="Dckang">
 <meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary">
@@ -31,7 +31,11 @@
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
   <div id="container">
@@ -120,8 +124,8 @@
 <li><h4 id="连续"><a href="#连续" class="headerlink" title="连续"></a>连续</h4><ol>
 <li><h5 id="连续的定义"><a href="#连续的定义" class="headerlink" title="连续的定义"></a>连续的定义</h5><ol>
 <li>从图形上理解：连续就是不间断，没有断点</li>
-<li>从定义的角度，如果一个函数没有断点，那么它相邻两个函数值大小必须靠得足够接近，接近到某种程度时，我们称它连续。这里可以完美地运用极限的思想：两个点靠得足够近。即$\lim\limits_{\Delta x \to 0}\Delta y = 0$。或者说，可以这样写$$</li>
-<li></li>
+<li>从定义的角度，如果一个函数没有断点，那么它相邻两个函数值大小必须靠得足够接近，接近到某种程度时，我们称它连续。这里可以完美地运用极限的思想：两个点靠得足够近。即$\lim\limits_{\Delta x \to 0}\Delta y = 0$。或者说，可以这样写：对任意的$\epsilon&gt;0$，都有一个$\delta&gt;0$，使得当$|x-x_{0}|&lt;\delta$时（可以取等），都有$|f(x)-f(x_{0})|&lt;\epsilon$。</li>
+<li>通过以上的理解，我们可以从上面的不等式归纳出一个非常好用的等式：$\lim\limits_{x \to x_{0}}f(x) = f(x_{0})$。</li>
 </ol>
 </li>
 </ol>
@@ -135,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dckang.top/2021/10/28/Calculus/" data-id="ckvaz2pv60000owvfeqoh7khm" class="article-share-link">Share</a>
+      <a data-url="http://dckang.top/2021/10/28/Calculus/" data-id="ckvb4uiqm0001i0vf9zweca9x" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/learn/" rel="tag">learn</a></li></ul>
@@ -145,6 +149,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2021/10/28/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
   
   
     <a href="/2021/10/27/Welcome/" id="article-nav-older" class="article-nav-link-wrap">
@@ -200,15 +213,15 @@
       <ul>
         
           <li>
+            <a href="/2021/10/28/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
             <a href="/2021/10/28/Calculus/">微积分学习心得</a>
           </li>
         
           <li>
             <a href="/2021/10/27/Welcome/">Welcome</a>
-          </li>
-        
-          <li>
-            <a href="/2021/10/20/hello-world/">Hello World</a>
           </li>
         
       </ul>

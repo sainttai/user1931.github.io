@@ -28,7 +28,11 @@
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
   <div id="container">
@@ -65,6 +69,55 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/10/28/hello-world/" class="article-date">
+  <time datetime="2021-10-28T15:58:33.167Z" itemprop="datePublished">2021-10-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/10/28/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://dckang.top/2021/10/28/hello-world/" data-id="ckvb4uiqt0003i0vf8eg5h40h" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-Calculus" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -119,8 +172,8 @@
 <li><h4 id="连续"><a href="#连续" class="headerlink" title="连续"></a>连续</h4><ol>
 <li><h5 id="连续的定义"><a href="#连续的定义" class="headerlink" title="连续的定义"></a>连续的定义</h5><ol>
 <li>从图形上理解：连续就是不间断，没有断点</li>
-<li>从定义的角度，如果一个函数没有断点，那么它相邻两个函数值大小必须靠得足够接近，接近到某种程度时，我们称它连续。这里可以完美地运用极限的思想：两个点靠得足够近。即$\lim\limits_{\Delta x \to 0}\Delta y = 0$。或者说，可以这样写$$</li>
-<li></li>
+<li>从定义的角度，如果一个函数没有断点，那么它相邻两个函数值大小必须靠得足够接近，接近到某种程度时，我们称它连续。这里可以完美地运用极限的思想：两个点靠得足够近。即$\lim\limits_{\Delta x \to 0}\Delta y = 0$。或者说，可以这样写：对任意的$\epsilon&gt;0$，都有一个$\delta&gt;0$，使得当$|x-x_{0}|&lt;\delta$时（可以取等），都有$|f(x)-f(x_{0})|&lt;\epsilon$。</li>
+<li>通过以上的理解，我们可以从上面的不等式归纳出一个非常好用的等式：$\lim\limits_{x \to x_{0}}f(x) = f(x_{0})$。</li>
 </ol>
 </li>
 </ol>
@@ -134,7 +187,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dckang.top/2021/10/28/Calculus/" data-id="ckvaz2pv60000owvfeqoh7khm" class="article-share-link">Share</a>
+      <a data-url="http://dckang.top/2021/10/28/Calculus/" data-id="ckvb4uiqm0001i0vf9zweca9x" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/learn/" rel="tag">learn</a></li></ul>
@@ -173,60 +226,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dckang.top/2021/10/27/Welcome/" data-id="ckvaz2pvh0001owvfdfd99s5u" class="article-share-link">Share</a>
+      <a data-url="http://dckang.top/2021/10/27/Welcome/" data-id="ckvb4uiqd0000i0vf81jn87fb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/learn/" rel="tag">learn</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/10/20/hello-world/" class="article-date">
-  <time datetime="2021-10-20T10:38:03.579Z" itemprop="datePublished">2021-10-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://dckang.top/2021/10/20/hello-world/" data-id="ckvaz2pvn0003owvf4era2gqk" class="article-share-link">Share</a>
-      
-      
     </footer>
   </div>
   
@@ -279,15 +283,15 @@
       <ul>
         
           <li>
+            <a href="/2021/10/28/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
             <a href="/2021/10/28/Calculus/">微积分学习心得</a>
           </li>
         
           <li>
             <a href="/2021/10/27/Welcome/">Welcome</a>
-          </li>
-        
-          <li>
-            <a href="/2021/10/20/hello-world/">Hello World</a>
           </li>
         
       </ul>
