@@ -166,7 +166,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/10/28/Calculus2/" class="post-title-link" itemprop="url">微积分学习心得（test）</a>
+            <a href="/2021/10/28/Calculus2/" class="post-title-link" itemprop="url">微积分学习心得</a>
         </h2>
 
         <div class="post-meta">
@@ -183,7 +183,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-29 16:45:22" itemprop="dateModified" datetime="2021-10-29T16:45:22+08:00">2021-10-29</time>
+                <time title="修改时间：2021-10-29 22:46:01" itemprop="dateModified" datetime="2021-10-29T22:46:01+08:00">2021-10-29</time>
               </span>
 
           <br>
@@ -192,14 +192,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.2k</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -211,7 +211,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="微积分学习心得同济高教">微积分学习心得（同济+高教）</h1>
+          <h1 id="微积分学习心得">微积分学习心得</h1>
 <h2 id="高等数学微积分期中总结">高等数学微积分期中总结</h2>
 <hr />
 <h3 id="极限与连续">极限与连续</h3>
@@ -236,149 +236,38 @@
 </ol></li>
 <li><h4 id="连续">连续</h4>
 <ol type="1">
-<li><h5 id="连续的定义">连续的定义</h5>
+<li><h5 id="连续的定义与判断">连续的定义与判断</h5>
 <p>从图形上理解：连续就是不间断，没有断点</p>
-<p>从定义的角度：如果一个函数没有断点，那么它相邻两个函数值大小必须靠得足够接近，接近到某种程度时，我们称它连续。这里可以完美地运用极限的思想：两个点靠得足够近。即<span class="math inline">\(\lim\limits_{\Delta x \to 0}\Delta y = 0\)</span>。或者说，可以这样写：对任意的<span class="math inline">\(\epsilon&gt;0\)</span>，都有一个<span class="math inline">\(\delta&gt;0\)</span>，使得当<span class="math inline">\(|x-x_{0}|&lt;\delta\)</span>时（可以取等），都有<span class="math inline">\(|f(x)-f(x_{0})|&lt;\epsilon\)</span>。</p>
+<p>从定义的角度：如果一个函数没有断点，那么它相邻两个函数值大小必须靠得足够接近，接近到某种程度时，我们称它连续。这里可以完美地运用极限的思想：两个点靠得无限近。即<span class="math inline">\(\lim\limits_{\Delta x \to 0}\Delta y = 0\)</span>。或者说，可以这样写：对任意的<span class="math inline">\(\epsilon&gt;0\)</span>，都有一个<span class="math inline">\(\delta&gt;0\)</span>，使得当<span class="math inline">\(|x-x_{0}|&lt;\delta\)</span>时（可以取等），都有<span class="math inline">\(|f(x)-f(x_{0})|&lt;\epsilon\)</span>。</p>
 <p>通过以上的理解，我们可以从上面的不等式归纳出一个非常好用的等式：<span class="math inline">\(\lim\limits_{x \to x_{0}}f(x) = f(x_{0})\)</span>。这个等式表明，在自变量无限接近于<span class="math inline">\(x_{0}\)</span>的时刻的极限值与该点处的函数值相等。需要注意的是，极限值永远指的是函数在<span class="math inline">\(x_{0}\)</span>附近的取值，它与这一点的函数值无必然关系。</p></li>
 <li><h5 id="间断点">间断点</h5>
 <p>如果一个函数在定义域<span class="math inline">\(D(x)\)</span>内是不连续的，那么在<span class="math inline">\(D(x)\)</span>内至少存在一点，该点的极限值不存在，或者即使存在，也与该点的函数值不相等。</p>
-<p>间断点分为第一类和第二类，第一类间断点属于左右极限存在的情况，第二类间断点属于左右极限不存在的情况，</p>
+<p>间断点分为第一类和第二类，第一类间断点属于左右极限存在的情况，第二类间断点属于左右极限不存在的情况。</p>
 <pre class="mermaid">      graph TD
 A(函数的间断点)-->B1(I类)
 A-->B2(II类)
 B1-->C1(可去间断点)
 B1-->C2(跳跃间断点)
 B2-->D1(无穷间断点)
-B2-->D2(振荡间断点)</pre></li>
+B2-->D2(振荡间断点)</pre>
+<p>说完间断点，我们可以梳理一下我们现在都有哪些工具：极限、连续。通过这些工具，接下来我们可以创造出出更加强大的工具：导数。</p></li>
+<li><h5 id="连续运算">连续运算</h5>
+<p>极限有运算法则，连续也有运算法则。连续的运算与极限的运算是不同的，极限的运算可以归结到具体的值，而连续的运算却只有对连续性的判断。连续运算的最终结果只有2个：连续<span class="math inline">\((1)\)</span>，不连续<span class="math inline">\((0)\)</span>。一个连续运算就如同计算机中的逻辑运算一样。对于和差运算，我们有<span class="math inline">\(1+1=1，1-1=1\)</span>，即所有的函数都连续，那么这些函数的和差函数也是连续的。积商同理。</p></li>
 </ol></li>
 </ol>
 <hr />
 <h3 id="导数与微分">导数与微分</h3>
 <hr />
-<p>微分中值定理及导数的应用</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://dckang.top/2021/10/28/Calculus/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Dckang">
-      <meta itemprop="description" content="A blog website">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dckang's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/10/28/Calculus/" class="post-title-link" itemprop="url">微积分学习心得</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-10-28 19:13:00" itemprop="dateCreated datePublished" datetime="2021-10-28T19:13:00+08:00">2021-10-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-29 12:29:18" itemprop="dateModified" datetime="2021-10-29T12:29:18+08:00">2021-10-29</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>996</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="微积分学习心得同济高教">微积分学习心得（同济+高教）</h1>
-<h2 id="高等数学微积分期中总结">高等数学微积分期中总结</h2>
-<hr />
-<h3 id="极限与连续">极限与连续</h3>
-<hr />
 <ol type="1">
-<li><h4 id="数列函数极限">数列/函数极限</h4>
-<p>极限这一章首先从数列极限入手，引出有关数列极限的标准定义ε-N定义，严格准确刻画了当<span class="math inline">\(n\)</span>趋向无穷时刻的数列值的趋势<span class="math inline">\(A\)</span>，并把A叫做该数列的极限。极限是一个准确的值，若取有限个点，得到的数列值的趋势不一致，或者<span class="math inline">\(A\)</span>的值是不准确的，那么称数列极限不存在（发散）。如<span class="math inline">\(\{1,-1,1,-1...\}\)</span>，<span class="math inline">\(\{n\}\)</span>。函数极限与数列极限类似，只不过把离散自变量变成连续自变量。由于自变量是连续的，因此每一个自变量及所对函数值的领域有无穷多个点，由此可得对于每一个有定义的自变量，都可以求出一个极限值，扩充了极限的种类。</p>
-<p>从极限引出了极限的性质、极限的存在准则。极限也可以参与运算，并有极限的运算法则来处理极限的运算问题。</p>
-<ol type="1">
-<li><h5 id="极限的性质">极限的性质</h5>
-<ol type="1">
-<li>极限具有唯一性。</li>
-<li>极限具有局部保号性、有界性（不等式性质）</li>
-<li>函数嵌套数列嵌套子数列的情况（子数列推论、海涅定理）</li>
-</ol></li>
-<li><h5 id="极限的存在准则">极限的存在准则</h5>
-<ol type="1">
-<li>夹逼定理（构造左右函数/数列）</li>
-<li>单调有界定理（单调性+有界性）</li>
-<li>柯西极限存在准则</li>
-<li>极限存在的充分条件（嵌套）</li>
-</ol></li>
-<li><h5 id="极限的四则运算">极限的四则运算</h5>
-<ol type="1">
-<li>使用条件：求出来的极限必须存在，如果极限做分母，那么极限不为零。</li>
-<li>运算法则：和差积商的极限=极限的和差积商。</li>
-</ol></li>
-</ol></li>
-<li><h4 id="连续">连续</h4>
-<ol type="1">
-<li><h5 id="连续的定义">连续的定义</h5>
-<ol type="1">
-<li>从图形上理解：连续就是不间断，没有断点</li>
-<li>从定义的角度，如果一个函数没有断点，那么它相邻两个函数值大小必须靠得足够接近，接近到某种程度时，我们称它连续。这里可以完美地运用极限的思想：两个点靠得足够近。即<span class="math inline">\(\lim\limits_{\Delta x \to 0}\Delta y = 0\)</span>。或者说，可以这样写：对任意的<span class="math inline">\(\epsilon&gt;0\)</span>，都有一个<span class="math inline">\(\delta&gt;0\)</span>，使得当<span class="math inline">\(|x-x_{0}|&lt;\delta\)</span>时（可以取等），都有<span class="math inline">\(|f(x)-f(x_{0})|&lt;\epsilon\)</span>。</li>
-<li>通过以上的理解，我们可以从上面的不等式归纳出一个非常好用的等式：<span class="math inline">\(\lim\limits_{x \to x_{0}}f(x) = f(x_{0})\)</span>。这个等式表明，在自变量无限接近于<span class="math inline">\(x_{0}\)</span>的时刻的极限值与该点处的函数值相等。需要注意的是，极限值永远指的是函数在<span class="math inline">\(x_{0}\)</span>附近的取值，它与这一点的函数值无必然关系。</li>
-<li></li>
-</ol></li>
-</ol></li>
+<li><h4 id="导数">导数</h4>
+<p>什么是导数</p>
+<p>从图形上理解：导数就是某一点的切线的斜率，而斜率是通过两个点确定的一条直线所决定的，这条直线与函数的图像只有一个交点。</p>
+<p>实际上，这种直观的理解不够准确。与某个函数只有一个交点不一定与这个函数相切，而且只知道一个交点是无法求出这个切线的方程的。这时该到极限登场了。我们确定一个标准，当函数图像上两个点靠得足够近，近到满足我们的标准时，我们可以将这两个点近似看成一个点，这个点就是这两点所确定直线方程与该函数的切点。现在，有了两个点，切线方程与切线斜率我们就都可以确定了。假设这两个点分别为<span class="math inline">\(x,x_0\)</span>，则导数就是<span class="math inline">\(\lim\limits_{x \to x_0}\frac{f(x)-f(x_0)}{x-x_0}\)</span>。</p></li>
+<li><h4 id="微分">微分</h4></li>
 </ol>
 <hr />
-<h3 id="导数与微分">导数与微分</h3>
+<h3 id="微分中值定理及导数的应用">微分中值定理及导数的应用</h3>
 <hr />
-<p>$ f^{(n)}(x) = a+b $</p>
-<p>微分中值定理及导数的应用</p>
 
       
     </div>
@@ -533,7 +422,7 @@ B2-->D2(振荡间断点)</pre></li>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
