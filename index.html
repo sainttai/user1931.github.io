@@ -275,6 +275,120 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://dckang.top/2021/10/28/Calculus2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dckang">
+      <meta itemprop="description" content="A blog website">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dckang's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/10/28/Calculus2/" class="post-title-link" itemprop="url">微积分学习心得（test）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-10-28 19:13:00" itemprop="dateCreated datePublished" datetime="2021-10-28T19:13:00+08:00">2021-10-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-29 15:25:03" itemprop="dateModified" datetime="2021-10-29T15:25:03+08:00">2021-10-29</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>996</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="微积分学习心得同济高教">微积分学习心得（同济+高教）</h1>
+<h2 id="高等数学微积分期中总结">高等数学微积分期中总结</h2>
+<hr />
+<h3 id="极限与连续">极限与连续</h3>
+<hr />
+<ol type="1">
+<li><h4 id="数列函数极限">数列/函数极限</h4>
+<p>极限这一章首先从数列极限入手，引出有关数列极限的标准定义ε-N定义，严格准确刻画了当<span class="math inline">\(n\)</span>趋向无穷时刻的数列值的趋势<span class="math inline">\(A\)</span>，并把A叫做该数列的极限。极限是一个准确的值，若取有限个点，得到的数列值的趋势不一致，或者<span class="math inline">\(A\)</span>的值是不准确的，那么称数列极限不存在（发散）。如<span class="math inline">\(\{1,-1,1,-1...\}\)</span>，<span class="math inline">\(\{n\}\)</span>。函数极限与数列极限类似，只不过把离散自变量变成连续自变量。由于自变量是连续的，因此每一个自变量及所对函数值的领域有无穷多个点，由此可得对于每一个有定义的自变量，都可以求出一个极限值，扩充了极限的种类。</p>
+<p>从极限引出了极限的性质、极限的存在准则。极限也可以参与运算，并有极限的运算法则来处理极限的运算问题。</p>
+<ol type="1">
+<li><h5 id="极限的性质">极限的性质</h5>
+<p>极限具有唯一性。</p>
+<p>极限具有局部保号性、有界性（不等式性质）</p>
+<p>函数嵌套数列嵌套子数列的情况（子数列推论、海涅定理）</p></li>
+<li><h5 id="极限的存在准则">极限的存在准则</h5>
+<p>夹逼定理（构造左右函数/数列）</p>
+<p>单调有界定理（单调性+有界性）</p>
+<p>柯西极限存在准则</p>
+<p>极限存在的充分条件（嵌套）</p></li>
+<li><h5 id="极限的四则运算">极限的四则运算</h5>
+<p>使用条件：求出来的极限必须存在，如果极限做分母，那么极限不为零。</p>
+<p>运算法则：和差积商的极限=极限的和差积商。</p></li>
+</ol></li>
+<li><h4 id="连续">连续</h4>
+<ol type="1">
+<li><h5 id="连续的定义">连续的定义</h5>
+<p>从图形上理解：连续就是不间断，没有断点</p>
+<p>从定义的角度，如果一个函数没有断点，那么它相邻两个函数值大小必须靠得足够接近，接近到某种程度时，我们称它连续。这里可以完美地运用极限的思想：两个点靠得足够近。即<span class="math inline">\(\lim\limits_{\Delta x \to 0}\Delta y = 0\)</span>。或者说，可以这样写：对任意的<span class="math inline">\(\epsilon&gt;0\)</span>，都有一个<span class="math inline">\(\delta&gt;0\)</span>，使得当<span class="math inline">\(|x-x_{0}|&lt;\delta\)</span>时（可以取等），都有<span class="math inline">\(|f(x)-f(x_{0})|&lt;\epsilon\)</span>。</p>
+<p>通过以上的理解，我们可以从上面的不等式归纳出一个非常好用的等式：<span class="math inline">\(\lim\limits_{x \to x_{0}}f(x) = f(x_{0})\)</span>。这个等式表明，在自变量无限接近于<span class="math inline">\(x_{0}\)</span>的时刻的极限值与该点处的函数值相等。需要注意的是，极限值永远指的是函数在<span class="math inline">\(x_{0}\)</span>附近的取值，它与这一点的函数值无必然关系。</p></li>
+</ol></li>
+</ol>
+<hr />
+<h3 id="导数与微分">导数与微分</h3>
+<hr />
+<p>$ f^{(n)}(x) = a+b $</p>
+<p>微分中值定理及导数的应用</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://dckang.top/2021/10/27/Welcome/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -410,7 +524,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -452,13 +566,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">1k</span>
+    <span title="站点总字数">2k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">2 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
