@@ -366,7 +366,13 @@
 <li><h5 id="间断点">间断点</h5>
 <p>如果一个函数在定义域<span class="math inline">\(D(x)\)</span>内是不连续的，那么在<span class="math inline">\(D(x)\)</span>内至少存在一点，该点的极限值不存在，或者即使存在，也与该点的函数值不相等。</p>
 <p>间断点分为第一类和第二类，第一类间断点属于左右极限存在的情况，第二类间断点属于左右极限不存在的情况，</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A(函数的间断点)--&gt;B1(I类)</span><br><span class="line">A--&gt;B2(II类)</span><br><span class="line">B1--&gt;C1(可去间断点)</span><br><span class="line">B1--&gt;C2(跳跃间断点)</span><br><span class="line">B2--&gt;D1(无穷间断点)</span><br><span class="line">B2--&gt;D2(振荡间断点)</span><br></pre></td></tr></table></figure></li>
+<pre class="mermaid">      graph TD
+A(函数的间断点)-->B1(I类)
+A-->B2(II类)
+B1-->C1(可去间断点)
+B1-->C2(跳跃间断点)
+B2-->D1(无穷间断点)
+B2-->D2(振荡间断点)</pre></li>
 </ol></li>
 </ol>
 <hr />
