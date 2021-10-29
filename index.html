@@ -306,7 +306,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-29 15:25:03" itemprop="dateModified" datetime="2021-10-29T15:25:03+08:00">2021-10-29</time>
+                <time title="修改时间：2021-10-29 16:45:22" itemprop="dateModified" datetime="2021-10-29T16:45:22+08:00">2021-10-29</time>
               </span>
 
           <br>
@@ -315,7 +315,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>996</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -361,14 +361,17 @@
 <ol type="1">
 <li><h5 id="连续的定义">连续的定义</h5>
 <p>从图形上理解：连续就是不间断，没有断点</p>
-<p>从定义的角度，如果一个函数没有断点，那么它相邻两个函数值大小必须靠得足够接近，接近到某种程度时，我们称它连续。这里可以完美地运用极限的思想：两个点靠得足够近。即<span class="math inline">\(\lim\limits_{\Delta x \to 0}\Delta y = 0\)</span>。或者说，可以这样写：对任意的<span class="math inline">\(\epsilon&gt;0\)</span>，都有一个<span class="math inline">\(\delta&gt;0\)</span>，使得当<span class="math inline">\(|x-x_{0}|&lt;\delta\)</span>时（可以取等），都有<span class="math inline">\(|f(x)-f(x_{0})|&lt;\epsilon\)</span>。</p>
+<p>从定义的角度：如果一个函数没有断点，那么它相邻两个函数值大小必须靠得足够接近，接近到某种程度时，我们称它连续。这里可以完美地运用极限的思想：两个点靠得足够近。即<span class="math inline">\(\lim\limits_{\Delta x \to 0}\Delta y = 0\)</span>。或者说，可以这样写：对任意的<span class="math inline">\(\epsilon&gt;0\)</span>，都有一个<span class="math inline">\(\delta&gt;0\)</span>，使得当<span class="math inline">\(|x-x_{0}|&lt;\delta\)</span>时（可以取等），都有<span class="math inline">\(|f(x)-f(x_{0})|&lt;\epsilon\)</span>。</p>
 <p>通过以上的理解，我们可以从上面的不等式归纳出一个非常好用的等式：<span class="math inline">\(\lim\limits_{x \to x_{0}}f(x) = f(x_{0})\)</span>。这个等式表明，在自变量无限接近于<span class="math inline">\(x_{0}\)</span>的时刻的极限值与该点处的函数值相等。需要注意的是，极限值永远指的是函数在<span class="math inline">\(x_{0}\)</span>附近的取值，它与这一点的函数值无必然关系。</p></li>
+<li><h5 id="间断点">间断点</h5>
+<p>如果一个函数在定义域<span class="math inline">\(D(x)\)</span>内是不连续的，那么在<span class="math inline">\(D(x)\)</span>内至少存在一点，该点的极限值不存在，或者即使存在，也与该点的函数值不相等。</p>
+<p>间断点分为第一类和第二类，第一类间断点属于左右极限存在的情况，第二类间断点属于左右极限不存在的情况，</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A(函数的间断点)--&gt;B1(I类)</span><br><span class="line">A--&gt;B2(II类)</span><br><span class="line">B1--&gt;C1(可去间断点)</span><br><span class="line">B1--&gt;C2(跳跃间断点)</span><br><span class="line">B2--&gt;D1(无穷间断点)</span><br><span class="line">B2--&gt;D2(振荡间断点)</span><br></pre></td></tr></table></figure></li>
 </ol></li>
 </ol>
 <hr />
 <h3 id="导数与微分">导数与微分</h3>
 <hr />
-<p>$ f^{(n)}(x) = a+b $</p>
 <p>微分中值定理及导数的应用</p>
 
       
