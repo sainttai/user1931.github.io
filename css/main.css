@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #4fd9ff;
+  background: #ffffba;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2468,16 +2468,16 @@ body {
   background-position: 50% 50%;
 }
 .content-wrap {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .sidebar {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 .header-inner {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.7);
 }
 .popup {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 .post-block {
   margin-top: 3px 0 10px 0 !important;
