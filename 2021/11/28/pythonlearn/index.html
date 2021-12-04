@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"dckang.top","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="常用Linux命令的基本使用 学习Linux重要性：服务器管理——SSH 1.调节终端字体大小：&quot;ctrl&quot; + &quot;+&quot; 或 &quot;-&quot; 2.常见7个Linux命令 12345678ls --&gt; ls &#x2F;&#x2F;用于展示目录下文件pwd --&gt; print work directory &#x2F;&#x2F;打印当前所在目录cd [目录名] --&gt; change directory &#x2F;&#x2F;切换文件夹t">
+  <meta name="description" content="常用Linux命令的基本使用 学习Linux重要性：服务器管理——SSH">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python学习">
 <meta property="og:url" content="http://dckang.top/2021/11/28/pythonlearn/index.html">
 <meta property="og:site_name" content="Dckang&#39;s blog">
-<meta property="og:description" content="常用Linux命令的基本使用 学习Linux重要性：服务器管理——SSH 1.调节终端字体大小：&quot;ctrl&quot; + &quot;+&quot; 或 &quot;-&quot; 2.常见7个Linux命令 12345678ls --&gt; ls &#x2F;&#x2F;用于展示目录下文件pwd --&gt; print work directory &#x2F;&#x2F;打印当前所在目录cd [目录名] --&gt; change directory &#x2F;&#x2F;切换文件夹t">
+<meta property="og:description" content="常用Linux命令的基本使用 学习Linux重要性：服务器管理——SSH">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-11-28T01:31:15.000Z">
-<meta property="article:modified_time" content="2021-12-03T15:46:48.039Z">
+<meta property="article:modified_time" content="2021-12-04T07:47:29.173Z">
 <meta property="article:author" content="Dckang">
 <meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary">
@@ -188,7 +188,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-12-03 23:46:48" itemprop="dateModified" datetime="2021-12-03T23:46:48+08:00">2021-12-03</time>
+                <time title="修改时间：2021-12-04 15:47:29" itemprop="dateModified" datetime="2021-12-04T15:47:29+08:00">2021-12-04</time>
               </span>
 
           
@@ -204,7 +204,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>853</span>
+              <span>1.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -224,7 +224,8 @@
 
       
         <h3 id="常用linux命令的基本使用">常用Linux命令的基本使用</h3>
-<p>学习Linux重要性：服务器管理——SSH<!--moe--></p>
+<p>学习Linux重要性：服务器管理——SSH</p>
+<span id="more"></span>
 <h4 id="调节终端字体大小ctrl-或--">1.调节终端字体大小："ctrl" + "+" 或 "-"</h4>
 <h4 id="常见7个linux命令">2.常见7个Linux命令</h4>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ls --&gt; ls //用于展示目录下文件</span><br><span class="line"><span class="built_in">pwd</span> --&gt; <span class="built_in">print</span> work directory //打印当前所在目录</span><br><span class="line"><span class="built_in">cd</span> [目录名] --&gt; change directory //切换文件夹</span><br><span class="line">touch [文件名] --&gt; touch //新建一个文件</span><br><span class="line">mkdir --&gt; make directory //新建文件夹</span><br><span class="line">rm [文件名]--&gt; remove //移除文件</span><br><span class="line">rmdir --&gt; remove directory //移除文件夹 等同于rm -r [文件名]</span><br><span class="line">clear --&gt; clear //清屏</span><br></pre></td></tr></table></figure>
@@ -309,6 +310,146 @@
 <tr class="odd">
 <td style="text-align: center;">-h</td>
 <td style="text-align: center;">配合-l以人性化的方式显示文件大小</td>
+</tr>
+</tbody>
+</table>
+<p>命令可以分开写，也可以合在一起写，并且不分顺序</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -l -h --&gt; ls -lh</span><br></pre></td></tr></table></figure>
+<h5 id="ls通配符">ls通配符</h5>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">通配符</th>
+<th style="text-align: center;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">*</td>
+<td style="text-align: center;">代表任意个数字符</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">代表任意一个字符，至少一个</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">[]</td>
+<td style="text-align: center;">表示可以匹配字符组中的任意一个</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">[abc]</td>
+<td style="text-align: center;">匹配a、b、c中的任意一个</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">[a-f]</td>
+<td style="text-align: center;">匹配从a到f范围内的任意一个字符</td>
+</tr>
+</tbody>
+</table>
+<h5 id="cd切换目录">cd切换目录</h5>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">命令</th>
+<th style="text-align: center;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">cd</td>
+<td style="text-align: center;">切换到当前用户的主目录(/home/)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">cd ~</td>
+<td style="text-align: center;">切换到当前用户的主目录(/home/)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">cd .</td>
+<td style="text-align: center;">保持当前目录不变</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">cd ..</td>
+<td style="text-align: center;">切换到上级目录</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">cd -</td>
+<td style="text-align: center;">可以在最近两次工作的目录中切换</td>
+</tr>
+</tbody>
+</table>
+<h5 id="相对路径和绝对路径">相对路径和绝对路径</h5>
+<p><strong>相对路径</strong>在输入路径时，最前面不是<strong>/</strong>或者<strong>~</strong>，表示相对<strong>当前目录</strong>所在的目录位置</p>
+<p><strong>绝对路径</strong>在输入路径时，最前面是<strong>/</strong>或者<strong>~</strong>，表示从<strong>根目录/家目录</strong>开始的具体目录位置</p>
+<h5 id="创建和删除操作">创建和删除操作</h5>
+<h6 id="touch">touch</h6>
+<p>创建文件或修改文件时间</p>
+<p>若文件不存在，则可以创建一个空白文件</p>
+<p>若文件已存在，可以修改文件的末次修改日期</p>
+<h6 id="mkdir">mkdir</h6>
+<p>创建一个新的目录</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">选项</th>
+<th style="text-align: center;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">-p</td>
+<td style="text-align: center;">可以递归创建目录</td>
+</tr>
+</tbody>
+</table>
+<h6 id="rm">rm</h6>
+<p>删除文件或目录</p>
+<p><strong>使用rm命令要小心，因为文件删除后不能恢复</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">选项</th>
+<th style="text-align: center;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">-f</td>
+<td style="text-align: center;">强制删除，忽略不存在的文件，无需提示</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">-r</td>
+<td style="text-align: center;">递归地删除目录下的内容，<strong>删除文件夹</strong>时必须加此参数</td>
+</tr>
+</tbody>
+</table>
+<h5 id="拷贝和移动文件">拷贝和移动文件</h5>
+<table>
+<thead>
+<tr class="header">
+<th>序号</th>
+<th>命令</th>
+<th>对应英文</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>01</td>
+<td>tree [目录名]</td>
+<td>tree</td>
+<td>以树状图列出文件目录结构</td>
+</tr>
+<tr class="even">
+<td>02</td>
+<td>cp 源文件 目标文件</td>
+<td>copy</td>
+<td>复制文件或目录</td>
+</tr>
+<tr class="odd">
+<td>03</td>
+<td>mv 源文件 目标文件</td>
+<td>move</td>
+<td>移动文件或者目录/文件或者目录重命名</td>
 </tr>
 </tbody>
 </table>
@@ -409,7 +550,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8linux%E5%91%BD%E4%BB%A4%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">常用Linux命令的基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E8%8A%82%E7%BB%88%E7%AB%AF%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8Fctrl-%E6%88%96--"><span class="nav-number">1.1.</span> <span class="nav-text">1.调节终端字体大小：&quot;ctrl&quot; + &quot;+&quot; 或 &quot;-&quot;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%B8%E8%A7%817%E4%B8%AAlinux%E5%91%BD%E4%BB%A4"><span class="nav-number">1.2.</span> <span class="nav-text">2.常见7个Linux命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%86%E8%A7%A3%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4%E7%9A%84%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.3.</span> <span class="nav-text">3.了解终端命令的格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E8%AF%A2%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9%E4%BF%A1%E6%81%AF"><span class="nav-number">1.4.</span> <span class="nav-text">4.查询命令帮助信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#help"><span class="nav-number">1.4.1.</span> <span class="nav-text">1.--help</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#man"><span class="nav-number">1.4.2.</span> <span class="nav-text">2.man</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.5.</span> <span class="nav-text">5.文件和目录常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%9B%AE%E5%BD%95%E5%86%85%E5%AE%B9"><span class="nav-number">1.5.1.</span> <span class="nav-text">查看目录内容</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%87%E6%8D%A2%E7%9B%AE%E5%BD%95"><span class="nav-number">1.5.2.</span> <span class="nav-text">切换目录</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%BB%88%E7%AB%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="nav-number">1.5.3.</span> <span class="nav-text">终端常用技巧</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8"><span class="nav-number">1.5.4.</span> <span class="nav-text">1.自动补全</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9B%BE%E7%BB%8F%E4%BD%BF%E7%94%A8%E8%BF%87%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">1.5.5.</span> <span class="nav-text">2.曾经使用过的命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#linux%E4%B8%8B%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.5.6.</span> <span class="nav-text">Linux下文件和目录的特点</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#linux%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E7%9B%AE%E5%BD%95%E5%90%8D%E7%A7%B0%E6%9C%80%E9%95%BF%E5%8F%AF%E4%BB%A5%E6%9C%89256%E4%B8%AA%E5%AD%97%E7%AC%A6"><span class="nav-number">1.5.6.1.</span> <span class="nav-text">1.Linux文件或者目录名称最长可以有256个字符</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BB%A5.%E5%BC%80%E5%A4%B4%E7%9A%84%E6%96%87%E4%BB%B6%E4%BB%A3%E8%A1%A8%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6%E7%94%A8ls%E6%89%93%E5%BC%80%E6%97%B6%E9%9C%80%E8%A6%81%E5%8A%A0-a%E5%91%BD%E4%BB%A4"><span class="nav-number">1.5.6.2.</span> <span class="nav-text">2.以.开头的文件代表隐藏文件，用ls打开时需要加-a命令</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BB%A3%E8%A1%A8%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95"><span class="nav-number">1.5.6.3.</span> <span class="nav-text">3. &quot;.&quot;代表当前目录</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BB%A3%E8%A1%A8%E4%B8%8A%E4%B8%80%E7%BA%A7%E7%9B%AE%E5%BD%95%E4%BD%BF%E7%94%A8cd%E5%91%BD%E4%BB%A4%E5%8F%AF%E4%BB%A5%E8%BF%94%E5%9B%9E%E4%B8%8A%E7%BA%A7%E7%9B%AE%E5%BD%95"><span class="nav-number">1.5.6.4.</span> <span class="nav-text">4.&quot;..&quot;代表上一级目录，使用cd命令可以返回上级目录</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ls-%E5%B8%B8%E7%94%A8%E9%80%89%E9%A1%B9"><span class="nav-number">1.5.7.</span> <span class="nav-text">ls 常用选项</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8linux%E5%91%BD%E4%BB%A4%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">常用Linux命令的基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E8%8A%82%E7%BB%88%E7%AB%AF%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8Fctrl-%E6%88%96--"><span class="nav-number">1.1.</span> <span class="nav-text">1.调节终端字体大小：&quot;ctrl&quot; + &quot;+&quot; 或 &quot;-&quot;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%B8%E8%A7%817%E4%B8%AAlinux%E5%91%BD%E4%BB%A4"><span class="nav-number">1.2.</span> <span class="nav-text">2.常见7个Linux命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%86%E8%A7%A3%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4%E7%9A%84%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.3.</span> <span class="nav-text">3.了解终端命令的格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E8%AF%A2%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9%E4%BF%A1%E6%81%AF"><span class="nav-number">1.4.</span> <span class="nav-text">4.查询命令帮助信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#help"><span class="nav-number">1.4.1.</span> <span class="nav-text">1.--help</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#man"><span class="nav-number">1.4.2.</span> <span class="nav-text">2.man</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.5.</span> <span class="nav-text">5.文件和目录常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%9B%AE%E5%BD%95%E5%86%85%E5%AE%B9"><span class="nav-number">1.5.1.</span> <span class="nav-text">查看目录内容</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%87%E6%8D%A2%E7%9B%AE%E5%BD%95"><span class="nav-number">1.5.2.</span> <span class="nav-text">切换目录</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%BB%88%E7%AB%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="nav-number">1.5.3.</span> <span class="nav-text">终端常用技巧</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8"><span class="nav-number">1.5.4.</span> <span class="nav-text">1.自动补全</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9B%BE%E7%BB%8F%E4%BD%BF%E7%94%A8%E8%BF%87%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">1.5.5.</span> <span class="nav-text">2.曾经使用过的命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#linux%E4%B8%8B%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.5.6.</span> <span class="nav-text">Linux下文件和目录的特点</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#linux%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E7%9B%AE%E5%BD%95%E5%90%8D%E7%A7%B0%E6%9C%80%E9%95%BF%E5%8F%AF%E4%BB%A5%E6%9C%89256%E4%B8%AA%E5%AD%97%E7%AC%A6"><span class="nav-number">1.5.6.1.</span> <span class="nav-text">1.Linux文件或者目录名称最长可以有256个字符</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BB%A5.%E5%BC%80%E5%A4%B4%E7%9A%84%E6%96%87%E4%BB%B6%E4%BB%A3%E8%A1%A8%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6%E7%94%A8ls%E6%89%93%E5%BC%80%E6%97%B6%E9%9C%80%E8%A6%81%E5%8A%A0-a%E5%91%BD%E4%BB%A4"><span class="nav-number">1.5.6.2.</span> <span class="nav-text">2.以.开头的文件代表隐藏文件，用ls打开时需要加-a命令</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BB%A3%E8%A1%A8%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95"><span class="nav-number">1.5.6.3.</span> <span class="nav-text">3. &quot;.&quot;代表当前目录</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BB%A3%E8%A1%A8%E4%B8%8A%E4%B8%80%E7%BA%A7%E7%9B%AE%E5%BD%95%E4%BD%BF%E7%94%A8cd%E5%91%BD%E4%BB%A4%E5%8F%AF%E4%BB%A5%E8%BF%94%E5%9B%9E%E4%B8%8A%E7%BA%A7%E7%9B%AE%E5%BD%95"><span class="nav-number">1.5.6.4.</span> <span class="nav-text">4.&quot;..&quot;代表上一级目录，使用cd命令可以返回上级目录</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ls-%E5%B8%B8%E7%94%A8%E9%80%89%E9%A1%B9"><span class="nav-number">1.5.7.</span> <span class="nav-text">ls 常用选项</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ls%E9%80%9A%E9%85%8D%E7%AC%A6"><span class="nav-number">1.5.8.</span> <span class="nav-text">ls通配符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#cd%E5%88%87%E6%8D%A2%E7%9B%AE%E5%BD%95"><span class="nav-number">1.5.9.</span> <span class="nav-text">cd切换目录</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%92%8C%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="nav-number">1.5.10.</span> <span class="nav-text">相对路径和绝对路径</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%92%8C%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C"><span class="nav-number">1.5.11.</span> <span class="nav-text">创建和删除操作</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#touch"><span class="nav-number">1.5.11.1.</span> <span class="nav-text">touch</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#mkdir"><span class="nav-number">1.5.11.2.</span> <span class="nav-text">mkdir</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#rm"><span class="nav-number">1.5.11.3.</span> <span class="nav-text">rm</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%8B%B7%E8%B4%9D%E5%92%8C%E7%A7%BB%E5%8A%A8%E6%96%87%E4%BB%B6"><span class="nav-number">1.5.12.</span> <span class="nav-text">拷贝和移动文件</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -465,13 +606,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">23k</span>
+    <span title="站点总字数">24k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">21 分钟</span>
+    <span title="站点阅读时长">22 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
